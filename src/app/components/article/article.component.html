@@ -10,7 +10,7 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-titel">{{ article.title }}</h5>
-          <h5 class="card-titel">{{ article.link }}</h5>
+          <h5 class="card-titel"><a href="{{ article.link }}">{{ article.link }}</a></h5>
             <a class="btn btn-success btn-sm float-left" (click)="this.article.voteUp()">Vote up</a>
             <a class="btn btn-warning btn-sm float-right" (click)="this.article.voteDown()">Down</a>
         </div>
