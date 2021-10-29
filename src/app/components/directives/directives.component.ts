@@ -7,16 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivesComponent implements OnInit {
 
-  classA: boolean = false;
+  // articles: Array<string>;
+  people: Array<any>;
 
-  constructor() { }
-
-  ngOnInit(): void {
-    this.classA = false;
+  constructor() {
+    // this.articles = ['Angular', 'React', 'Vue', 'Python', 'Java'];
+    this.people = [
+      {name: "John", age:28, city: "New-York"},
+      {name: "Mickael", age:22, city: "Paris"},
+      {name: "Daniel", age:27, city: "Berlin"},
+    ];
   }
 
-  toggleClass(){
-    this.classA = !this.classA;
+  ngOnInit(): void {
+    this.people.forEach(people => {
+      console.log(people);
+    })
   }
 
 }
