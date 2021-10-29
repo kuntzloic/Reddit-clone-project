@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivesComponent implements OnInit {
 
+  classA: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.classA = false;
+  }
+
+  toggleClass(){
+    this.classA = !this.classA;
   }
 
 }

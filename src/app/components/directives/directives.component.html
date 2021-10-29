@@ -1,6 +1,12 @@
 <div class="p-5 bg-light">
   <div class="container">
-    <h1 class="display-3">Directives NgIf</h1>
+    <h1 class="display-4">Directives NgClass</h1>
   </div>
-  <div *ngIf="2 < 8"><h2>Show this if true</h2></div>
+
+  <div [ngClass]="{'bordered': classA}" >Apply this Class</div>
+
+  <button (click)="toggleClass()">Toggle Class</button>
+
 </div>
+
+<!-- <h1 [ngStyle]="{color: 'green', 'background-color': 'blue'}">NgStyle</h1> -->
